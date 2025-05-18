@@ -1,0 +1,63 @@
+SettingInterface,
+#scrollWidget {
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+QScrollArea {
+    border: none;
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* 设置容器样式与主页风格统一 */
+#settingsContainer {
+    background-color: rgb(50, 50, 50);
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 15px;
+}
+
+/* 卡片样式改进 */
+SettingCardGroup {
+    background-color: rgb(43, 43, 43);
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+/* 设置卡片中的按钮圆角 */
+SettingCardGroup PushButton,
+SettingCardGroup ComboBox {
+    border-radius: 5px;
+}
+
+/* 添加各种设置卡片的圆角 */
+OptionsSettingCard,
+ComboBoxSettingCard,
+PushSettingCard,
+SwitchSettingCard,
+HyperlinkCard,
+PrimaryPushSettingCard,
+CustomColorSettingCard {
+    border-radius: 8px;
+    background-color: rgb(43, 43, 43);
+    margin: 5px 0;
+}
+
+/* 设置卡片标题和内容区域 */
+QLabel[class="SettingCardTitle"] {
+    font: 14px 'Microsoft YaHei';
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+}
+
+QLabel[class="SettingCardContent"] {
+    font: 11px 'Microsoft YaHei';
+    background-color: transparent;
+    color: rgb(208, 208, 208);
+}

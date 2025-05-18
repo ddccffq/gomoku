@@ -1,0 +1,45 @@
+/* 合并通用样式，去除light和dark文件夹中的重复定义 */
+
+/* 全局文本控件透明背景 */
+QLabel,
+TitleLabel,
+SubtitleLabel,
+CaptionLabel,
+StrongBodyLabel,
+BodyLabel {
+    background-color: transparent;
+}
+
+/* 组标题样式 */
+QGroupBox {
+    font: 14px 'Microsoft YaHei';
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+/* 界面标题 */
+QLabel#interfaceTitle {
+    font: 33px 'Microsoft YaHei Light';
+    background-color: transparent;
+}
+
+/* 添加圆角效果 */
+.Window {
+    border-radius: 10px;
+}
+
+/* 为QListWidget添加圆角 */
+QListWidget {
+    border-radius: 8px;
+}
+
+/* 设置卡片组圆角 */
+SettingCardGroup {
+    border-radius: 12px;
+}
+
+/* 移除导航栏的圆角 */
+NavigationBar {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

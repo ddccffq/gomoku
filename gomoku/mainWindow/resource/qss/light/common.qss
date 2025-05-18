@@ -1,0 +1,120 @@
+/* 所有界面通用的浅色主题样式 */
+
+QWidget {
+    background-color: rgb(249, 249, 249);
+    color: rgb(43, 43, 43);
+}
+
+QScrollArea {
+    background-color: rgb(249, 249, 249);
+    border: none;
+}
+
+/* 确保所有文本类控件的背景为透明，以继承父控件背景色 */
+QLabel,
+TitleLabel,
+SubtitleLabel,
+CaptionLabel,
+StrongBodyLabel,
+BodyLabel {
+    background-color: transparent;
+}
+
+/* 所有界面的标题 */
+QLabel#interfaceTitle {
+    font: 33px 'Microsoft YaHei Light';
+    background-color: transparent;
+}
+
+/* 主页界面样式 */
+HomeInterface,
+#homeWidget {
+    background-color: rgb(249, 249, 249);
+}
+
+/* 设置界面样式 */
+SettingInterface,
+#scrollWidget {
+    background-color: rgb(249, 249, 249);
+}
+
+/* 历史界面样式 */
+HistoryInterface {
+    background-color: rgb(245, 245, 245);
+}
+
+/* 应用界面样式 */
+#App-Interface {
+    background-color: rgb(249, 249, 249);
+}
+
+/* 组标题的样式 */
+QGroupBox {
+    font: 14px 'Microsoft YaHei';
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    /* 增加圆角半径 */
+    margin-top: 12px;
+    background-color: rgb(252, 252, 252);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}
+
+/* 内容区域样式 */
+#contentWidget,
+#gameWidget,
+#homeWidget {
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 15px;
+    /* 增加圆角半径 */
+}
+
+/* 主窗口样式区分：导航栏与标题栏使用统一颜色 */
+NavigationBar {
+    background-color: rgb(248, 248, 248);
+    border-right: 1px solid rgb(229, 229, 229);
+    /* 移除导航栏的圆角 */
+    border-top-right-radius: 0;
+    /* 移除右上角圆角 */
+    border-bottom-right-radius: 0;
+    /* 移除右下角圆角 */
+}
+
+/* 自定义标题栏样式 */
+CustomTitleBar {
+    background-color: rgb(248, 248, 248);
+    /* 与导航栏保持一致 */
+}
+
+/* 标题栏中的标题文本 */
+QLabel#titleLabel {
+    color: rgb(26, 26, 26);
+    font: 13px 'Microsoft YaHei';
+    background-color: transparent;
+}
+
+/* 添加主窗口整体的圆角效果 */
+.Window {
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    /* 窗口边框圆角 */
+}
+
+/* 为QListWidget添加圆角 */
+QListWidget {
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 设置卡片组的圆角 */
+SettingCardGroup {
+    border-radius: 12px;
+    /* 增加设置卡片组的圆角半径 */
+}

@@ -1,0 +1,18 @@
+{
+    "Update": {
+        "CheckUpdateAtStartUp": true
+    },
+    "MainWindow": {
+        "DpiScale": "Auto",
+        "EnableAcrylicBackground": false,
+        "Language": "en_US",
+        "MinimizeToTray": true
+    },
+    "Game": {
+        "HistoryDirectory": "game_history"
+    },
+    "Theme": {
+        "ThemeColor": "#ff0078d4",
+        "ThemeMode": "Light"
+    }
+}
